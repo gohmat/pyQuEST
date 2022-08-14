@@ -4,3 +4,5 @@ build-backend = 'setuptools.build_meta'  # Should be switched to skbuild-backend
 
 [project]
 dependencies = ['numpy']  # This is not yet used by any tool, but we comply with PEP 631 anyway.
+name = "pyquest"
+version = "0.0.1"

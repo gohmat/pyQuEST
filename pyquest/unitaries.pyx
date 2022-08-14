@@ -601,6 +601,16 @@ cdef class R(GlobalOperator):
             c_register, self._qubits, self._pauli_types,
             self._num_qubits, self._angle)
 
+    @property
+    def angle(self):
+        return self._angle
+
+    @angle.setter
+    def angle(self, value):
+        self._angle = value
+
+    
+
 Unitary = U
 CompactUnitary = CompactU
 NOT = X
